@@ -21,7 +21,7 @@ def send_email(recipient):
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)  # Replace with actual SMTP server details
         server.starttls()
-        server.login("banklejohn@gmail.com", "rfjdemnclfefhvsf")  # Replace with actual credentials
+        server.login("bankolejohn@gmail.com", "rfjdemnclfefhvsf")  # Replace with actual credentials
         message = "Subject: Test Email\n\nThis is a test email."
         server.sendmail("bankolejohn@gmail.com", recipient, message)
         server.quit()
